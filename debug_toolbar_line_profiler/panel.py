@@ -257,8 +257,8 @@ class ProfilingPanel(Panel):
             self.add_node(
                 func_list=func_list,
                 func=root_node,
-                max_depth=10,
-                cum_time=root_node.cumtime() / 8
+                max_depth=15,
+                cum_time=root_node.cumtime() / 32
             )
         # else:
         # what should we do if we didn't detect a root function? It's not
